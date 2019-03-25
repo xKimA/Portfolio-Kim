@@ -1,0 +1,683 @@
+/*----- EN-TÊTE GRAPHIQUE DU SITE---*/ 
+
+#Accueil{
+    height:100vh;
+}
+
+.bg-primary{
+    background-color:#F4F4F4 !important;
+}
+
+#bg {
+	position: fixed; 
+	top: 0; left: 0; width: 100%; height: 100%;
+	transition: all 2s ease-out;
+	background: linear-gradient(to right, #ff9a9e 0%, #fad0c4 100%);
+}
+
+/*---LOGO DANS EN-TÊTE---*/
+
+.logo{
+    position: relative;
+}
+
+.carre1{
+position:absolute;
+border: 5px solid #fed700;
+width:300px;
+height:300px;
+background-color: rgba(0, 0, 0, 0);
+transform: rotate(-20deg);
+left:15vw;
+}
+
+.carre2{
+position:absolute;
+border: 5px solid rgb(69, 58, 216);
+width:290px;
+height:290px;
+background-color: rgba(0, 0, 0, 0);
+transform: rotate(-40deg);
+left:15vw;
+}
+
+#tete{
+    width:50vw;
+    height:100vh;
+}
+
+
+.nomHaut{
+    font-size:8vw;
+}
+
+.designTitre{
+    font-size:6vw;
+}
+/*----- FIN EN-TÊTE -----*/
+
+
+
+/*----- FLÈCHE POUR DESCENDRE DANS PAGE---*/
+
+.arrow {
+    opacity: 1;
+    position: absolute;
+    margin-top:25vh;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow:before,
+.arrow:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+#aPropos{
+   /* height:110vh;*/
+}
+
+.page-propos{
+    padding-bottom:5em;
+}
+
+.img-propos{
+    max-width: 80%;
+    padding-top:5vh;
+    margin-bottom:5vh;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.titreSection {
+    background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+    width:45vw;
+    margin-left:5vw;
+  }
+
+  /*.divDessus{
+    background-color:rgb(69, 58, 216);
+    width:250px;
+    height:200px;
+    margin:0 auto;
+    margin-bottom:1vh;
+    margin-top:2vh;
+}
+
+
+.divDessus:hover{
+    transform: translateY(0) scale(1);
+      top: 0;
+}
+
+.panel-content{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform .25s, opacity .8s;
+}
+
+.panel-content:hover{
+    transform: translateY(0);
+      opacity: 1;
+      height:100vh;
+}*/
+
+  /*-- Section Compétences --*/
+
+  .titreSectionComp{
+    background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+    width:60vw;
+    margin-left:5vw;
+  }
+
+  .divMauve{
+    background-color:rgb(69, 58, 216);
+    border:3px solid black;
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    margin-bottom:1vh;
+    margin-top:2vh;
+}
+
+.text-grey-100{
+    color:rgb(53, 53, 53);
+}
+
+.justify{
+    text-align:justify;
+    width:80vw;
+    margin: 0 auto;
+    line-height: 1.8em;
+}
+
+.text-skill{
+     color:#fed700 !important;
+     margin:0 auto;
+     font-size:30px;
+     margin-top:15px;
+}
+
+.text-skill2{
+    color:#fed700 !important;
+    margin:0 auto;
+    font-size:22px;
+    margin-top:20px;
+    line-height:10vh;
+}
+
+.text-skill3{
+    color:#fed700 !important;
+    margin:0 auto;
+    font-size:15px;
+    margin-top:25px;
+    line-height:10vh;
+}
+
+.icone-graduation{
+    color:#fed700 !important;
+    margin:0 auto;
+    font-size:40px;
+    margin-top:25px;
+}
+
+.btn {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    border: 1px solid rgba(26,169,122,1);
+    width: 200px;
+    height: 50px;
+    padding: 17px 26px 10px 0px;
+    color: rgba(255,255,255,1);
+    transition: all ease .5s;
+  }
+
+  .skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100px;
+	background:rgb(202, 202, 202);
+	height:6px;
+	/*border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;*/
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+    -webkit-transition-property:width;
+    margin:0 auto;
+}
+
+.skillbar-bar {
+	height:6px;
+	width:0px;
+	/*border-radius:3px;
+	-moz-border-radius:3px;
+    -webkit-border-radius:3px;*/
+}
+
+/*-- Section Expérience --*/
+  
+  .animHeader {
+    font-size: 72px;
+    line-height: 106px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+  }
+  h2 .line {
+    overflow: hidden;
+  }
+  h2 .line .w-0 {
+    position: relative;
+    top: 106px;
+    animation: moveUp forwards 1.5s 0s cubic-bezier(0.78, 0, 0.81, 0);
+  }
+  h2 .line .w-1 {
+    position: relative;
+    top: 106px;
+    animation: moveUp forwards 1.5s 0.10s cubic-bezier(0.78, 0, 0.81, 0);
+  }
+  h2 .line .w-2 {
+    position: relative;
+    top: 106px;
+    animation: moveUp forwards 1.5s 0.20s cubic-bezier(0.78, 0, 0.81, 0);
+  }
+    
+  @keyframes moveUp {
+    from {
+      top: 106px;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+
+
+.fondCouleur h1{
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-family: Tahoma;
+    font-weight: 900;
+    font-size: 2rem;
+    
+}
+*/
+.fondCouleur .separator{
+    background-color: #fed700;
+    width: 4px;
+    height: 5px;
+    display: block;
+    margin: 0 20px 0 15px;
+}
+
+.active .separator{
+    height: 65%;
+    transform: rotate(0);
+}
+
+.fondCouleur.active h1{
+    transform: translateX(0);
+    
+}
+.fondCouleur.active p{
+    transform: translateX(0);
+}
+
+
+    /*-- Section Réalisations --*/
+    /*-- Section Contact --*/
+    /*-- Section Footer --*/
+
+    #footer{
+        color:white !important;
+    }
+
+   /*-- FORMAT TABLETTE --*/
+   @media (min-width: 489px) {
+    .skillbar {
+        width:100px;
+    }
+
+    .justify{
+        position:relative;
+        width:60vw;
+        text-align:justify;
+    }
+
+    .titreSectionComp{
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:40vw;
+        margin-left:5vw;
+      }
+   }
+
+ /*--FIN FLÈCHE --*/
+
+   /*-- FORMAT TABLETTE --*/
+  @media (min-width: 768px) {
+
+    /*-- Section Accueil--*/
+
+    .carre1{
+        width:300px;
+        height:300px;
+    }
+
+    .carre2{
+        width:300px;
+        height:300px;
+    }
+
+    #Accueil{
+        height:100vh;
+    }
+
+    .nomHaut{
+        font-size:5vw;
+    }
+
+    .designTitre{
+        font-size:4vw;
+    }
+
+    /*Tablette - Section À Propos*/
+
+    .page-propos{
+        padding:4em;
+    }
+
+    .img-propos{
+        max-width: 70%;
+        margin-bottom:5vh;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .titreSection {
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:23vw;
+        margin-left:10vw;
+      }
+
+    .container-propos{
+        position:relative;
+    }
+
+    .justify{
+        position:relative;
+        width:60vw;
+        text-align:justify;
+    }
+
+    .formeMauve{
+
+        background-color:rgb(69, 58, 216);
+        width:50px;
+        height:500px;
+        position:absolute;
+    }
+
+    .formeJaune{
+        border: 5px solid #fed700;
+        width:500px;
+        height:500px;
+        position:absolute;
+        transform: rotate(-40deg);
+    }
+
+    /*-- Tablette - Section Compétences --*/
+    .titreSectionComp{
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:32vw;
+        margin-left:5vw;
+    }
+
+      /*-- Section Compétences --*/
+
+
+    .divMauve{
+        background-color:rgb(69, 58, 216);
+        border:3px solid black;
+        width:100px;
+        height:100px;
+        margin:0 auto;
+        margin-bottom:1vh;
+        margin-top:2vh;
+        
+    }
+    
+    .text-skill{
+         color:yellow !important;
+         margin:0 auto;
+         font-size:45px;
+        margin-top:15px;
+    }
+
+    .text-skill2{
+        color:yellow !important;
+        margin:0 auto;
+        font-size:30px;
+       margin-top:15px;
+   }
+
+   .text-skill3{
+    color:yellow !important;
+    margin:0 auto;
+    font-size:22px;
+   margin-top:15px;
+}
+
+  .skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100px;
+	background:#eee;
+	height:6px;
+	/*border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;*/
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+    -webkit-transition-property:width; 
+    margin:0 auto;
+}
+.skillbar-bar {
+	height:6px;
+	width:0px;
+}
+
+
+    /*-- Tablette - Section Réalisations --*/
+    
+    /*-- Tablette - Section Contact --*/
+    /*-- Tablette - Section Footer --*/
+
+    #footer{
+        height:3vh;
+        color:white !important;
+    }    
+}
+
+/*-- ... --*/
+  
+  @media (min-width: 992px) {
+    .carre1{
+        width:500px;
+        height:500px;
+    }
+
+    .carre2{
+        width:500px;
+        height:500px;
+    }
+
+    .nomHaut{
+        font-size:5vh;
+    }
+
+    /*Section À Propos*/
+    .img-propos{
+        max-width: 55%;
+        margin-bottom:5vh;
+    }
+
+    .justify{
+       max-width:55%;
+    }
+
+    .titreSection {
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:225px;
+      }
+
+    /*-- Section Compétences --*/
+    .titreSectionComp{
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:25vw;
+        margin-left:5vw;
+    }
+
+    .skillbar {
+        position:relative;
+        display:block;
+        margin-bottom:15px;
+        width:48%;
+        background:#eee;
+        height:6px;
+        /*border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;*/
+        -webkit-transition:0.4s linear;
+        -moz-transition:0.4s linear;
+        -ms-transition:0.4s linear;
+        -o-transition:0.4s linear;
+        transition:0.4s linear;
+        -webkit-transition-property:width; 
+        margin:0 auto;
+    /*-- Section Réalisations --*/
+    /*-- Section Contact --*/
+    /*-- Section Footer --*/
+
+  }
+  #footer{
+    color:white !important;
+  }
+
+}
+
+  /*-- FORMAT DESKTOP --*/
+  @media (min-width: 1200px) {
+
+    .carre1{
+        width:400px;
+        height:400px;
+    }
+
+    .carre2{
+        width:400px;
+        height:400px;
+    }
+
+    #Accueil{
+        height:100vh;
+    }
+
+    /* Desktop - Section À Propos*/
+    .img-propos{
+        max-width: 75%;
+        margin-bottom:5vh;
+        
+    }
+s
+
+    .nomHaut{
+        font-size:8vh;
+    }
+
+    .designTitre{
+        font-size:5vh;
+    }
+
+    .titreSection {
+        background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+        width:200px;
+        margin-top:8vw;
+      }
+
+      .justify{ 
+        /*text-align:justify;*/
+        max-width:70%;
+        margin: 0 auto;
+        line-height: 1.8em;
+      }
+
+      .container-propos{
+          display:flex;
+          flex-direction:row;
+          align-items:center;
+       }
+
+    /*-- Desktop - Section Compétences --*/
+
+    .divMauve{
+        background-color:rgb(53, 53, 228);
+        border:3px solid black;
+        width:100px;
+        height:100px;
+        margin:0 auto;
+        margin-bottom:2vh;
+        margin-top:2vh;
+    }
+    
+    .text-skill{
+         color:#fed700 !important;
+         top:50%;
+         margin:0 auto;
+         font-size:40px;
+         line-height:15vh;
+    }
+
+    .text-skill2{
+        color:#fed700 !important;
+        top:50%;
+        margin:0 auto;
+        font-size:20px;
+        line-height:12vh;
+   }
+
+   .text-skill3{
+    color:#fed700 !important;
+    top:70%;
+    margin:0 auto;
+    font-size:15px;
+    line-height:12vh;
+}
+
+.titreSectionComp{
+    background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
+    width:20vw;
+    margin-left:5vw;
+}
+
+    .skillbar {
+        position:relative;
+        display:block;
+        margin-bottom:15px;
+        width:100px;
+        background:#eee;
+        height:6px;
+        -webkit-transition:0.4s linear;
+        -moz-transition:0.4s linear;
+        -ms-transition:0.4s linear;
+        -o-transition:0.4s linear;
+        transition:0.4s linear;
+        -webkit-transition-property:width; 
+        margin:0 auto;
+    }
+    .skillbar-bar {
+        height:6px;
+        width:0px;
+        background:#6adcfa;
+    }
+
+    /*-- Desktop - Section Réalisations --*/
+    /*-- Desktop - Section Contact --*/
+    /*-- Desktop - Section Footer --*/
+
+    #footer{
+        color:white !important;
+    }
+}
