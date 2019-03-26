@@ -11,7 +11,7 @@ document.onmousemove = function(e){
 	col1 = mouseX - blendAmount;
 	col2 = mouseX + blendAmount;
 	
-	bg.style.background = "linear-gradient(to right, #7e57c2 "+ col1 +"%, #673ab7 "+ col2 +"%)";
+	bg.style.background = "linear-gradient(to right, rgb(69, 58, 216) "+ col1 +"%, #673ab7 "+ col2 +"%)";
 }
 
 

@@ -10678,16 +10678,29 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");*/
-  background-color:rgb(228, 228, 228);
+  background: linear-gradient(to bottom, rgba(59, 59, 59, 0.8) 0%, rgba(92, 94, 255, 0.8) 100%), url("../img/head.jpg");
+  background-color:rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  color:white;
+
 }
 
+/*.masthead{
+  animation: scale 40s linear infinite;
+}
 
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+}*/
 
 @media (min-width: 992px) {
   header.masthead {
