@@ -1,3 +1,4 @@
+
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
@@ -16,6 +17,8 @@
     background: rgb(53, 53, 228 , 0.8);
     
   }
+
+
   
  #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -70,12 +73,12 @@
 
   .portfolio-captionCat{
     background-color: rgb(53, 53, 228);
-      color:white;
+    color:white;
     max-width: 500px;
     text-align: center;
     vertical-align: middle;
     line-height: 265px;
-    font-size:5vw; 
+    font-size:10vw; 
    }
 
   
@@ -113,11 +116,11 @@
       background-color: rgb(53, 53, 228);
       color:white;
       max-width: 500px;
-      height:500px;
+      height:50vh;
       text-align: center;
       vertical-align: middle;
       line-height: 500px;
-      font-size:5vw; 
+      font-size:8vw; 
      }
   
     
@@ -214,7 +217,33 @@
   }
 
  
+  @media (min-width: 992px) {
 
+    #portfolio .portfolio-item .portfolio-caption {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 25px;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+    }
+  
+    .portfolio-captionCat{
+      background-color: #c7c7c7 ;
+      max-width: 400px;
+      height:35vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 350px;
+      font-size:3vw; 
+      color:rgb(69, 58, 216);
+     }
+  
+     .portfolio-captionCat:hover{
+      background-color: rgb(53, 53, 228);
+      color:white;
+     }
+   
+  }
   
   
   /*-- FORMAT DESKTOP --*/
@@ -229,13 +258,14 @@
     }
   
     .portfolio-captionCat{
-      background-color: #d1d1d1 ;
+      background-color: #c7c7c7 ;
       max-width: 400px;
-      height:319px;
+      height:40vh;
       text-align: center;
       vertical-align: middle;
       line-height: 350px;
       font-size:3vw; 
+      color:rgb(69, 58, 216);
      }
   
      .portfolio-captionCat:hover{

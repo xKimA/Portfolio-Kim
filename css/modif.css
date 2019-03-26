@@ -27,24 +27,29 @@
     flex-direction: column;
     
   }
+   /*Anim Première ligne (KIM)*/
   .animHeader .line {
     overflow: hidden;
   }
+  /*Anim Première ligne (KIM)*/
   .animHeader .line .w-0 {
     position: relative;
     top: 106px;
     animation: moveUp forwards 2s 0s cubic-bezier(0.78, 0, 0.81, 0);
   }
+  /*Anim 1e ligne (KIM)*/
   .animHeader .line .w-1 {
     position: relative;
     top: 106px;
     animation: moveUp forwards 2s 0.15s cubic-bezier(0.78, 0, 0.81, 0);
   }
+  /*Anim 2e ligne (KIM)*/
   .animHeader .line .w-2 {
     position: relative;
     top: 106px;
     animation: moveUp forwards 2s 0.3s cubic-bezier(0.78, 0, 0.81, 0);
   }
+  /*Anim 3e ligne (KIM)*/
   .animHeader .line .w-3 {
     position: relative;
     top: 106px;
@@ -491,7 +496,7 @@ left:15vw;
 
 
     .divMauve{
-        background-color:rgb(58, 87, 216);
+        background-color:rgb(53, 53, 228);
         border:3px solid black;
         width:100px;
         height:100px;
@@ -620,6 +625,38 @@ left:15vw;
   /*-- FORMAT DESKTOP --*/
   @media (min-width: 1200px) {
 
+    .arrow {
+      opacity: 1;
+      position: absolute;
+      margin-top:10vh;
+      transform-origin: 50% 50%;
+      transform: translate3d(-50%, -50%, 0);
+      padding-left:0vw;
+      padding-right:1vw;
+  }
+  
+  .arrow:before,
+  .arrow:after {
+      background: white;
+      content: '';
+      display: block;
+      height: 3px; 
+      position: absolute;
+          top: 0;
+          left: 0;
+      width: 30px;
+  }
+  
+  .arrow:before {
+      transform: rotate(45deg) translateX(-23%);
+      transform-origin: top left;
+  }
+  
+  .arrow:after {
+      transform: rotate(-45deg) translateX(23%);
+      transform-origin: top right;
+  }
+
     /*.animHeader {
         font-size: 72px;
         line-height: 106px;*/
@@ -676,11 +713,10 @@ left:15vw;
 
     /* Desktop - Section À Propos*/
     .img-propos{
-        max-width: 75%;
+        max-width: 80%;
         margin-bottom:5vh;
-        
+        margin-left:20vw;
     }
-s
 
     .nomHaut{
         font-size:8vh;
@@ -690,21 +726,30 @@ s
         font-size:5vh;
     }
 
+    .titreSectionPropos{
+      
+      margin-top:14vh;
+      text-align:right;
+    }
   
-
       .justify{ 
         /*text-align:justify;*/
         max-width:70%;
         margin: 0 auto;
-        line-height: 1.8em;
+        line-height: 2em;
+        margin-left:19vw;
       }
 
       .container-propos{
           display:flex;
           flex-direction:row;
           align-items:center;
+          margin:0 auto;
        }
 
+       hr.divider{
+         margin-left:19vw;
+       }
     /*-- Desktop - Section Compétences --*/
 
     .divMauve{
@@ -742,7 +787,6 @@ s
 }
 
 .titreSectionComp{
-    background: linear-gradient(to top, rgb(53, 53, 228, 0.9) 40%, transparent 40%);
     width:20vw;
     margin-left:5vw;
 }
@@ -769,6 +813,11 @@ s
     }
 
     /*-- Desktop - Section Réalisations --*/
+
+    .titreSectionR{
+      margin-left:10vw;
+      margin-bottom:4vh;
+    }
     /*-- Desktop - Section Contact --*/
     /*-- Desktop - Section Footer --*/
 
