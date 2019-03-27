@@ -461,6 +461,12 @@ left:15vw;
 
     .titreSection {
         text-align:left;
+        margin-bottom:5vw;
+      }
+
+      .titreSectionR {
+        text-align:left;
+        margin-bottom:5vw;
         margin-left:5vw;
       }
 
@@ -549,8 +555,53 @@ left:15vw;
 	height:6px;
 	width:0px;
 }
+/*-- Tablette - Section Expérience --*/
+
+.fondCouleur{
+ 
+}
+
+.fondCarre{
+  position:absolute;
+  border: 3px solid #fed700;
+  width:210px;
+  height:160px;
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotate(-6deg);
+  animation:rotateCarre 6s infinite;
+}
+
+.fondCarre2{
+  position:absolute;
+  border: 3px solid rgb(53, 53, 228);
+  width:210px;
+  height:160px;
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotate(0deg);
+}
+
+.annee h1{
+  font-size:3vw;
+}
 
 
+
+.dip{
+  line-height:3vh;
+
+}
+
+@keyframes rotateCarre {
+  from {
+    transform:rotate(-6deg);
+
+  }50%{
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(-6deg);
+  }
+}
     /*-- Tablette - Section Réalisations --*/
     
     /*-- Tablette - Section Contact --*/
@@ -581,7 +632,7 @@ left:15vw;
 
     /*Section À Propos*/
     .img-propos{
-        max-width: 55%;
+        max-width: 90%;
         margin-bottom:5vh;
     }
 
@@ -589,7 +640,12 @@ left:15vw;
        max-width:90%;
     }
 
-  
+    .titreSectionPropos{
+      
+      margin-top:14vh;
+      text-align:center;
+      
+    }
 
     /*-- Section Compétences --*/
    
@@ -624,6 +680,8 @@ left:15vw;
 
   /*-- FORMAT DESKTOP --*/
   @media (min-width: 1200px) {
+
+   
 
     .arrow {
       opacity: 1;
@@ -812,6 +870,9 @@ left:15vw;
         background:#6adcfa;
     }
 
+    /*-- Desktop - Section Expérience --*/
+
+
     /*-- Desktop - Section Réalisations --*/
 
     .titreSectionR{
@@ -819,6 +880,10 @@ left:15vw;
       margin-bottom:4vh;
     }
     /*-- Desktop - Section Contact --*/
+
+   .contact{
+     margin-left:15vw;
+   }
     /*-- Desktop - Section Footer --*/
 
     #footer{

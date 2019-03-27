@@ -169,7 +169,7 @@ a {
 
 a:hover {
   color: #6650a0;
-  text-decoration: underline;
+  text-decoration: overline;
 }
 
 a:not([href]):not([tabindex]) {
@@ -4388,6 +4388,7 @@ input[type="button"].btn-block {
   color: #fff;
   background-color: rgb(69, 58, 216);
 }
+
 
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
