@@ -20,7 +20,7 @@
 
   /*---ANIMATION TEXTE HEADER---*/
   .animHeader {
-    font-size: 72px;
+    font-size: 15vw;
     line-height: 106px;
     border:1px solid black;
     display: flex;
@@ -175,6 +175,17 @@ left:15vw;
 
 .titreSection {
     text-align:center;
+    margin-bottom:5vh;
+  }
+
+  .titreSectionPropos {
+    text-align:center;
+    margin-bottom:5vh;
+  }
+
+  .titreSectionR {
+    text-align:center;
+    margin-bottom:5vh;
   }
 
 
@@ -563,15 +574,7 @@ left:15vw;
  
 }
 
-.fondCarreJ{
-  position:absolute;
-  border: 3px solid #fed700;
-  width:28vw;
-  height:30vh;
-  background-color: rgba(0, 0, 0, 0);
-  transform: rotate(-6deg);
-  animation:rotateCarre 6s infinite;
-}
+
 
 .fondCarre2J{
   position:absolute;
@@ -580,6 +583,8 @@ left:15vw;
   height:30vh;
   background-color: rgba(0, 0, 0, 0);
   transform: rotate(0deg);
+  margin-top:8vh;
+ 
 }
 
 .annee h1{
@@ -593,17 +598,7 @@ left:15vw;
 
 }
 
-@keyframes rotateCarre {
-  from {
-    transform:rotate(-6deg);
 
-  }50%{
-    transform:rotate(0deg);
-  }
-  to {
-    transform:rotate(-6deg);
-  }
-}
 
 /*JOB*/
 
@@ -611,15 +606,8 @@ left:15vw;
  
 }
 
-.fondCarreE{
-  position:absolute;
-  border: 3px solid #fed700;
-  width:210px;
-  height:270px;
-  background-color: rgba(0, 0, 0, 0);
-  transform: rotate(-6deg);
-  animation:rotateCarre 6s infinite;
-}
+
+
 
 .fondCarre2E{
   position:absolute;
@@ -641,17 +629,6 @@ left:15vw;
 
 }
 
-@keyframes rotateCarre {
-  from {
-    transform:rotate(-6deg);
-
-  }50%{
-    transform:rotate(0deg);
-  }
-  to {
-    transform:rotate(-6deg);
-  }
-}
 
 
     /*-- Tablette - Section Réalisations --*/
@@ -923,7 +900,113 @@ left:15vw;
     }
 
     /*-- Desktop - Section Expérience --*/
+/*ÉDUCATION*/
 
+.fondCouleurJ:hover{
+  
+}
+
+.fondCarreJ{
+  position:absolute;
+  border: 3px solid #fed700;
+  width:28vw;
+  height:30vh;
+  background-color: rgba(0, 0, 0, 0);
+  /*transform: rotate(-6deg);*/
+  margin-top:15vh;
+}
+
+.fondCarreJ:hover{
+
+}
+.fondCarre2J{
+  position:absolute;
+  border: 3px solid rgb(53, 53, 228);
+  width:28vw;
+  height:30vh;
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotate(0deg);
+  margin-top:15vh;
+  animation:rotateCarre 6s infinite;
+}
+
+.annee h1{
+  font-size:3vw;
+}
+
+
+
+.dip{
+  line-height:3vh;
+
+}
+
+@keyframes rotateCarre {
+  from {
+    transform:rotate(0deg);
+
+  }50%{
+    transform:rotate(-6deg);
+  }
+  to {
+    transform:rotate(0deg);
+  }
+}
+
+/*JOB*/
+
+.fondCouleurE{
+ 
+}
+
+.fondCarreE{
+  position:absolute;
+  border: 3px solid #fed700;
+  width:28vw;
+  height:30vh;
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotate(-6deg);
+  animation:rotateCarreE 6s infinite;
+  
+  
+}
+
+.fondCarreE:hover{
+
+}
+
+.fondCarre2E{
+  position:absolute;
+  border: 3px solid rgb(53, 53, 228);
+  width:28vw;
+  height:30vh;
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotate(0deg);
+ 
+}
+
+.annee h1{
+  font-size:3vw;
+}
+
+
+
+.dip{
+  line-height:3vh;
+
+}
+
+@keyframes rotateCarreE {
+  from {
+    transform:rotate(0deg);
+
+  }50%{
+    transform:rotate(6deg);
+  }
+  to {
+    transform:rotate(0deg);
+  }
+}
 
     /*-- Desktop - Section Réalisations --*/
 
