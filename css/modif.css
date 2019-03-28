@@ -342,6 +342,17 @@ left:15vw;
     transform: translateX(0);
 }
 
+.annee h1{
+  font-size:8vw;
+}
+
+.fondCouleurE{ 
+  border-bottom:1px solid rgb(69, 58, 216);
+}
+
+.fondCouleurJ{ 
+  border-bottom:1px solid rgb(69, 58, 216);
+}
 
     /*-- Section Réalisations --*/
     /*-- Section Contact --*/
@@ -598,6 +609,13 @@ left:15vw;
 
 }
 
+.fondCouleurE{ 
+  border-bottom:0px solid rgb(69, 58, 216);
+}
+
+.fondCouleurJ{ 
+  border-bottom:0px solid rgb(69, 58, 216);
+}
 
 
 /*JOB*/
@@ -696,11 +714,93 @@ left:15vw;
         transition:0.4s linear;
         -webkit-transition-property:width; 
         margin:0 auto;
-    /*-- Section Réalisations --*/
+      }
+    /*-- Section Expérience --*/
+
+    
     /*-- Section Contact --*/
     /*-- Section Footer --*/
 
+
+  .fondCarreE{
+    position:absolute;
+    border: 3px solid #fed700;
+    width:90%;
+    margin-right:5vw;
+    height:105%;
+    background-color: rgba(0, 0, 0, 0);
+    transform: rotate(-6deg);
+    animation:rotateCarreE 6s infinite;
+    
+    
   }
+  
+  
+  .fondCarre2E{
+    position:absolute;
+    border: 3px solid rgb(53, 53, 228);
+    width:90%;
+    margin-right:5vw;
+    height:105%;
+    background-color: rgba(0, 0, 0, 0);
+    transform: rotate(0deg);
+   
+  }
+
+  .fondCarreJ{
+    position:absolute;
+    border: 3px solid #fed700;
+    width:95%;
+    margin-right:5vw;
+    height:80%;
+    background-color: rgba(0, 0, 0, 0);
+    transform: rotate(-6deg);
+    animation:rotateCarreE 6s infinite;
+    margin-top:83px;
+    
+    
+  }
+  
+  .annee h1{
+    font-size:2.5vw;
+  }
+  
+  .fondCarre2J{
+    position:absolute;
+    border: 3px solid rgb(53, 53, 228);
+    width:95%;
+    margin-right:5vw;
+    height:80%;
+    background-color: rgba(0, 0, 0, 0);
+    transform: rotate(0deg);
+   
+  }
+
+  @keyframes rotateCarreE {
+    from {
+      transform:rotate(0deg);
+  
+    }50%{
+      transform:rotate(-6deg);
+    }
+    to {
+      transform:rotate(0deg);
+    }
+  }
+
+  @keyframes rotateCarreJ {
+    from {
+      transform:rotate(0deg);
+  
+    }50%{
+      transform:rotate(6deg);
+    }
+    to {
+      transform:rotate(0deg);
+    }
+  }
+
+
   #footer{
     color:white !important;
   }
@@ -854,23 +954,23 @@ left:15vw;
          top:50%;
          margin:0 auto;
          font-size:40px;
-         line-height:15vh;
+         line-height:100px;
     }
 
     .text-skill2{
         color:#fed700 !important;
         top:50%;
         margin:0 auto;
-        font-size:20px;
-        line-height:12vh;
+        font-size:25px;
+        line-height:100px;
    }
 
    .text-skill3{
     color:#fed700 !important;
     top:70%;
     margin:0 auto;
-    font-size:15px;
-    line-height:12vh;
+    font-size:20px;
+    line-height:100px;
 }
 
 .titreSectionComp{
@@ -902,44 +1002,32 @@ left:15vw;
     /*-- Desktop - Section Expérience --*/
 /*ÉDUCATION*/
 
-.fondCouleurJ:hover{
-  
-}
+
 
 .fondCarreJ{
   position:absolute;
   border: 3px solid #fed700;
-  width:28vw;
-  height:30vh;
+  width:90%;
+  margin-right:5vw;
+  height:70%;
   background-color: rgba(0, 0, 0, 0);
   /*transform: rotate(-6deg);*/
   margin-top:15vh;
+  
 }
 
-.fondCarreJ:hover{
-
-}
 .fondCarre2J{
   position:absolute;
   border: 3px solid rgb(53, 53, 228);
-  width:28vw;
-  height:30vh;
+  width:90%;
+  height:70%;
   background-color: rgba(0, 0, 0, 0);
   transform: rotate(0deg);
   margin-top:15vh;
   animation:rotateCarre 6s infinite;
 }
 
-.annee h1{
-  font-size:3vw;
-}
 
-
-
-.dip{
-  line-height:3vh;
-
-}
 
 @keyframes rotateCarre {
   from {
@@ -962,8 +1050,9 @@ left:15vw;
 .fondCarreE{
   position:absolute;
   border: 3px solid #fed700;
-  width:28vw;
-  height:30vh;
+  width:90%;
+  margin-right:5vw;
+  height:105%;
   background-color: rgba(0, 0, 0, 0);
   transform: rotate(-6deg);
   animation:rotateCarreE 6s infinite;
@@ -971,22 +1060,20 @@ left:15vw;
   
 }
 
-.fondCarreE:hover{
-
-}
 
 .fondCarre2E{
   position:absolute;
   border: 3px solid rgb(53, 53, 228);
-  width:28vw;
-  height:30vh;
+  width:90%;
+  margin-right:5vw;
+  height:105%;
   background-color: rgba(0, 0, 0, 0);
   transform: rotate(0deg);
  
 }
 
 .annee h1{
-  font-size:3vw;
+  font-size:2vw;
 }
 
 

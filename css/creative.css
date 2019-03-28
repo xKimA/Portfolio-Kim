@@ -4386,7 +4386,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: rgb(69, 58, 216);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -10632,7 +10632,7 @@ hr.light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: rgb(69, 58, 216) !important;
+  color: rgb(47, 32, 253) !important;
 }
 
 @media (min-width: 992px) {
